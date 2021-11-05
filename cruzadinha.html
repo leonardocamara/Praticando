@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinha</title>
+    <style>
+        .quadrado {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightblue; background-image: linear-gradient(white, lightblue); ">
+    <div>
+        <h1 style="text-align: center;">Cruzadinha X Arquitetura</h1>
+    </div>
+    <div style="text-align: center">
+        1- Sigla para Unidade Central de Processamento <input id="input_cpu"><button
+            onclick="id_verifcar1()">Verificar</button><br>
+        2- Sigla para Unidade lógica e aritmética <input id="input_ula"><button
+            onclick="id_verifcar2()">Verificar</button><br>
+        3- Onde ocorre a memorização dos bits, se encontram na parte interna da CPU <input
+            id="input_registradores"><button onclick="id_verifcar3()">Verificar</button><br>
+        4- Memória que oferece dados apenas para leitura <input id="input_rom"><button
+            onclick="id_verifcar4()">Verificar</button><br>
+        5- Memória não-volátil da Unidade de Comando Eletrônico (UCE) do sistema de injeção <input
+            id="input_eprom"><button onclick="id_verifcar5()">Verifcar</button><br>
+        6- Memória que permite o acesso aos arquivos armazenados no computador. <input id="input_ram"><button
+            onclick="id_verifcar6()">Verificar</button><br>
+        7- Tem como função armazenar grandes quantidades de informações <input id="input_massa"><button
+            onclick="id_verifcar7()">Verificar</button><br>
+        8- Processor lançado oficialmente no dia 9 de setembro de 2009 <input id="input_i5"><button
+            onclick="id_verifcar8()">Verificar</button><br>
+        9- Processador que comporta quatro núcleos de processamento <input id="input_quad"><button
+            onclick="id_verifcar9()">Verificar</button><br>
+        10- Por onde envia os dados e informações. <input id="input_data_bus"><button
+            onclick="id_verifcar10()">Verificar</button><br>
+        11- É o acesso de periféricos diretamente na memória do sistema sem a necessidade de ocupar tempo do
+        processador. <input id="input_dma"><button onclick="id_verifcar11()">Verificar</button><br>
+        12- É um mecanismo de decodificação fundamental para permitir à CPU acessar memórias e/ou periféricos externos
+        <input id="input_cs"><button onclick="id_verifcar12()">Verifcar</button><br>
+        13- Permite o acesso ao endereço da informação. <input id="input_adress"><button
+            onclick="id_verifcar13()">Verificar</button><br>
+        14- Chip de memória de computador que mantém informações armazenadas sem a necessidade de uma fonte de energia.
+        <input id="input_flash"><button onclick="id_verifcar14()">Verificar</button><br>
+        15- Processador que comporta dois núcleos de processamento <input id="input_dual"> <button
+            onclick="id_verifcar15()">Verifcar</button><br>
+        16- Processador lançado oficialmente em 17 de novembro de 2008 pela intel <input id="input_i7"><button
+            onclick="id_verifcar16()">Verifcar</button><br>
+    </div>
+
+    <div style="margin-top: 50px; margin-left: 80px;">
+
+
+    <input id="a1" placeholder="1" style="margin-left: 195px;" class="quadrado"><input id="a2" class="quadrado"><input id="a3" placeholder="2"
+        class="quadrado"><br>
+    <input id="a5" style="margin-left: 251px;" class="quadrado"><br>
+    <input id="a6" placeholder="3/4" style="margin-left: 57px;" class="quadrado"><input id="a7" class="quadrado"><input
+    id="a8" class="quadrado"><input id="a10" placeholder="16" class="quadrado"><input id="a11" class="quadrado"><input id="a12" class="quadrado"><input
+    id="a13" class="quadrado"><input id="a14" class="quadrado"><input id="a15" class="quadrado"><input id="a16" class="quadrado"><input
+    id="a17"  class="quadrado"><input id="a18" placeholder="5" class="quadrado"><input id="a19" class="quadrado"><br>
+    <input id="a20" style="margin-left: 57px;" class="quadrado"><input id="a21" style="margin-left: 56px;" class="quadrado"><input
+    id="a22" style="margin-left: 196px;" class="quadrado"><input id="a23" placeholder="9" style="margin-left: 195px;"
+        class="quadrado"><input id="a24" placeholder="10" style="margin-left: 168px;" class="quadrado"><br>
+    <input id="a25" placeholder="6" class="quadrado"><input id="a26" class="quadrado"><input id="a27" class="quadrado"><input id="a28"
+        style="margin-left: 281px;" class="quadrado"><input id="a29" placeholder="11" style="margin-left: 140px;"
+        class="quadrado"><input id="a30" style="margin-left: 27px;" class="quadrado"><input id="a31" style="margin-left: 169px;"
+        class="quadrado"><br>
+    <input id="a32" style="margin-left: 365px;" class="quadrado"><input id="a33" style="margin-left: 139px;" class="quadrado"><input id="a34"
+        style="margin-left: 28px;" class="quadrado"><input id="a35" placeholder="12" style="margin-left: 112px;"
+        class="quadrado"><input id="a36" style="margin-left: 29px;" class="quadrado"><br>
+    <input id="a37" placeholder="7" style="margin-left: 365px;" class="quadrado"><input id="a38" class="quadrado"><input id="a39"
+        class="quadrado"><input id="a40" class="quadrado"><input id="a41" class="quadrado"><input id="a42" placeholder="8" class="quadrado"><input id="a43"
+        class="quadrado"><input id="a44" placeholder=" ---" class="quadrado"><input id="a45" class="quadrado"><input id="a46"
+        class="quadrado"><input id="a47" placeholder=" ---" class="quadrado"><input id="a48" class="quadrado"><input id="a49" placeholder="13"
+        class="quadrado"><input id="a50" class="quadrado"><input id="a51" class="quadrado"><input id="a52" class="quadrado"><br>
+    <input id="a53" style="margin-left: 505px;" class="quadrado"><input id="a54" style="margin-left: 56px;" placeholder=" ---"
+        class="quadrado"><input id="a55" style="margin-left: 83px;" class="quadrado"><input id="a56" style="margin-left: 56px;"
+        placeholder=" ---" class="quadrado"><br>
+    <input id="a57" style="margin-left: 589px;" class="quadrado"><input id="a58" style="margin-left: 83px;" class="quadrado"><input id="a59"
+        style="margin-left: 56px;" class="quadrado"><br>
+    <input id="a60" style="margin-left: 589px;" class="quadrado"><input id="a61" style="margin-left: 83px;" class="quadrado"><input id="a62"
+        style="margin-left: 56px;" class="quadrado"><br>
+    <input id="a63" style="margin-left: 589px;" class="quadrado"><input id="a64" style="margin-left: 83px;" class="quadrado"><input id="a65"
+        style="margin-left: 56px;" class="quadrado"><br>
+    <input id="a66" style="margin-left: 589px;" class="quadrado"><input id="a67" style="margin-left: 83px;" class="quadrado"><br>
+    <input id="a68" style="margin-left: 700px;" placeholder=" ---" class="quadrado"><input id="a69" placeholder="14" class="quadrado"><br>
+    <input id="a70" style="margin-left: 700px;" class="quadrado"><input id="a71" class="quadrado"><br>
+    <input id="a72" placeholder="15" style="margin-left: 672px;" class="quadrado"><input id="a73" class="quadrado"><input id="a74"
+        class="quadrado"><input id="a75" class="quadrado"><input id="a76" placeholder=" ---" class="quadrado"><input id="a77"
+        class="quadrado"><input id="a78" class="quadrado"><input id="a79" class="quadrado"><input id="a80" class="quadrado"><br>
+    <input id="a81" style="margin-left: 700px;" class="quadrado"><input id="a82" class="quadrado"><br>
+    <input id="a83" style="margin-left: 728px;" class="quadrado">
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    function id_verifcar1() {
+        var cpu = input_cpu.value.toUpperCase();
+        if (cpu == "CPU") {
+            alert("Resposta correta ;)")
+            a1.value = 'C';
+            a2.value = 'P';
+            a3.value = 'U';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar2() {
+        var ula = input_ula.value.toUpperCase();
+        if (ula == "ULA") {
+            alert("Resposta correta ;)")
+            a3.value = 'U';
+            a5.value = 'L';
+            a14.value = 'A';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar3() {
+        var registradores = input_registradores.value.toUpperCase();
+        if (registradores == "REGISTRADORES") {
+            alert("Resposta correta ;)")
+            a6.value = 'R';
+            a7.value = 'E';
+            a8.value = 'G';
+            a10.value = 'I';
+            a11.value = 'S';
+            a12.value = 'T';
+            a13.value = 'R';
+            a14.value = 'A';
+            a15.value = 'D';
+            a16.value = 'O';
+            a17.value = 'R';
+            a18.value = 'E';
+            a19.value = 'S';
+
+            
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar4() {
+        var rom = input_rom.value.toUpperCase();
+        if (rom == "ROM") {
+            alert("Resposta correta ;)")
+            a6.value = 'R';
+            a20.value = 'O';
+            a27.value = 'M';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar5() {
+        var eprom = input_eprom.value.toUpperCase();
+        if (eprom == "EPROM") {
+            alert("Resposta correta ;)")
+            a18.value = 'E';
+            a22.value = 'P';
+            a28.value = 'R';
+            a32.value = 'O';
+            a37.value = 'M';
+           
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar6() {
+        var ram = input_ram.value.toUpperCase();
+        if (ram == "RAM") {
+            alert("Resposta correta ;)")
+            a25.value = 'R';
+            a26.value = 'A';
+            a27.value = 'M';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar7() {
+        var massa = input_massa.value.toUpperCase();
+        if (massa == "MEMÓRIA DE MASSA" || massa == "MEMORIA DE MASSA") {
+            alert("Resposta correta ;)")
+            a37.value = 'M';
+            a38.value = 'E';
+            a39.value = 'M';
+            a40.value = 'Ó';
+            a41.value = 'R';
+            a42.value = 'I';
+            a43.value = 'A';
+            a45.value = 'D';
+            a46.value = 'E';
+            a48.value = 'M';
+            a49.value = 'A';
+            a50.value = 'S';
+            a51.value = 'S';
+            a52.value = 'A';
+
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+    function id_verifcar8() {
+        var i5 = input_i5.value.toUpperCase();
+        if (i5 == "I5") {
+            alert("Resposta correta ;)")
+            a42.value = 'I';
+            a53.value = '5';
+
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar9() {
+        var quad = input_quad.value.toUpperCase();
+        if (quad == "QUAD CORE") {
+            alert("Resposta correta ;)")
+            a23.value = 'Q';
+            a30.value = 'U';
+            a34.value = 'A';
+            a45.value = 'D';
+            a57.value = 'C';
+            a60.value = 'O';
+            a63.value = 'R';
+            a66.value = 'E';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar10() {
+        var data_bus = input_data_bus.value.toUpperCase();
+        if (data_bus == "DATA BUS") {
+            alert("Resposta correta ;)")
+            a24.value = 'D';
+            a31.value = 'A';
+            a36.value = 'T';
+            a52.value = 'A';
+            a59.value = 'B';
+            a62.value = 'U';
+            a65.value = 'S';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar11() {
+        var dma = input_dma.value.toUpperCase();
+        if (dma == "DMA") {
+            alert("Resposta correta ;)")
+            a29.value = 'D';
+            a33.value = 'M';
+            a43.value = 'A';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar12() {
+        var cs = input_cs.value.toUpperCase();
+        if (cs == "CS") {
+            alert("Resposta correta ;)")
+            a35.value = 'C';
+            a50.value = 'S';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar13() {
+        var adress = input_adress.value.toUpperCase();
+        if (adress == "ADRESS BUS") {
+            alert("Resposta correta ;)")
+            a49.value = 'A';
+            a55.value = 'D';
+            a58.value = 'R';
+            a61.value = 'E';
+            a64.value = 'S';
+            a67.value = 'S';
+            a70.value = 'B';
+            a73.value = 'U';
+            a81.value = 'S';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar14() {
+        var flash = input_flash.value.toUpperCase();
+        if (flash == "FLASH") {
+            alert("Resposta correta ;)")
+            a69.value = 'F';
+            a71.value = 'L';
+            a74.value = 'A';
+            a82.value = 'S';
+            a83.value = 'H';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar15() {
+        var dual = input_dual.value.toUpperCase();
+        if (dual == "DUAL CORE") {
+            alert("Resposta correta ;)")
+            a72.value = 'D';
+            a73.value = 'U';
+            a74.value = 'A';
+            a75.value = 'L';
+            a77.value = 'C';
+            a78.value = 'O';
+            a79.value = 'R';
+            a80.value = 'E';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+    function id_verifcar16() {
+        var i7 = input_i7.value.toUpperCase();
+        if (i7 == "I7") {
+            alert("Resposta correta ;)")
+            a10.value = 'I';
+            a21.value = '7';
+        }
+        else {
+            alert("Resposta incorreta :(")
+        }
+    }
+
+
+</script>
