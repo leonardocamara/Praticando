@@ -37,8 +37,6 @@ echo \"java instalado versão 8\"
 else echo \"você escolheu não instalar\"
 fi
 fi
-echo \"Clonando repositório\"
-git clone https://github.com/leonardocamara/Praticando.git -y
 cd Praticando
 chmod a+rx eagle-back-1.0-SNAPSHOT-jar-with-dependencies.jar
 java -jar eagle-back-1.0-SNAPSHOT-jar-with-dependencies.jar
