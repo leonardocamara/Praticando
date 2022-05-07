@@ -20,7 +20,7 @@
     </div>
     <div style="text-align: center">
         1- Sigla para Unidade Central de Processamento <input id="input_cpu"><button
-            onclick="id_verifcar1()">Verificar</button><br>
+            onclick="id_verifcar1()">Verificar. </button><br>
         2- Sigla para Unidade lógica e aritmética <input id="input_ula"><button
             onclick="id_verifcar2()">Verificar</button><br>
         3- Onde ocorre a memorização dos bits, se encontram na parte interna da CPU <input
